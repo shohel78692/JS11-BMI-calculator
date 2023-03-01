@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <div class="container">
+
+        <h1>BMI Calculator</h1>
+        <form>
+            <div class="input">
+                <input type="number" id="weight" placeholder="Enter your weight in kg" required>
+            </div>
+            <div class="input">
+                <input type="number" id="height" placeholder="Enter your height in cm" required>
+            </div>
+            <div class="input">
+                <button id="submit"onclick=" check(); return false;" >Calculate</button>
+            </div>
+        </form>
+        <div class="result">
+            <h2>Your BMI is <span id="bmi">0</span></h2>
+            <h3>You are <span id="status">perfect</span></h3>
+        </div>
+    </div> 
+
+
+    <script src="script.js"></script>
+</body>
+</html>
